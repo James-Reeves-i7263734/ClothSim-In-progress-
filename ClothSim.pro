@@ -10,29 +10,31 @@ isEqual(QT_MAJOR_VERSION, 5) {
 }
 
 SOURCES += \
-    particle.cpp \
-    spring.cpp \
-    cloth.cpp \
-    vec3.cpp \
+    src/particle.cpp \
+    src/spring.cpp \
+    src/cloth.cpp \
+    src/vec3.cpp \
     #main.cpp \
-    #clothglwindow.cpp
-    inextensible.cpp \
-    mat3x3.cpp \
-    mat2x3.cpp
+    #src/clothglwindow.cpp
+    src/inextensible.cpp \
+    src/mat3x3.cpp \
+    src/mat2x3.cpp
 
 HEADERS += \
-    cloth.h \
-    particle.h \
-    spring.h \
-    vec3.h \
-    constants.h \
-    #clothglwindow.h
-    inextensible.h \
-    mat3x3.h \
-    mat2x3.h
+    include/cloth.h \
+    include/particle.h \
+    include/spring.h \
+    include/vec3.h \
+    include/constants.h \
+    #include/clothglwindow.h
+    include/inextensible.h \
+    include/mat3x3.h \
+    include/mat2x3.h
 
 DISTFILES += \
     fragshader.frag \
     vertexshader.vert
+
+INCLUDEPATH += include
 
 
