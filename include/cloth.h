@@ -60,14 +60,12 @@ public:
 
     void drawTri(Particle *_p1, Particle *_p2, Particle *_p3);
 
+    //According to Qt's debugger this is apparently the source of the issue, except that in previous iterations of the
+    //code this worked. I have no idea what I've done wrong
     Particle* getParticle(int _x, int _y)
     {
-        return &currentParticle[_y * CLOTHSIZE + _x];
+        return &part_1[_y * CLOTHSIZE + _x];
     }
-    /*Particle getPart(int x, int y)
-    {
-        return part_1.at(x * CLOTHSIZE + y);
-    }*/
 
 private:
 
